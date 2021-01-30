@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="./images/favicon.ico">
+
+    <title>Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 0.5px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(220, 20%, 94%);
+        }
+        
+        body {
+            margin-top: 5%;
+            font-family: 'Karla', sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: hsl(204, 43%, 93%);
+            font-size: 14px;
+        }
+        
+        .all {
+            width: 37%;
+            height: 75%;
+            display: grid;
+            min-width: 570px;
+        }
+        
+        h1 {
+            font-size: 21px;
+        }
+        
+        h2 {
+            font-size: 16px;
+        }
+        
+        .top {
+            grid-area: 1 / 1;
+            height: 74%;
+            width: 161%;
+            background-color: white;
+            padding: 35px;
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .T_h1 {
+            color: hsl(179, 62%, 43%);
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+        
+        .T_h2 {
+            color: hsl(71, 73%, 54%);
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+        
+        .T_p {
+            color: hsla(0, 0%, 0%, 0.4);
+            line-height: 22px;
+        }
+        
+        .left {
+            grid-area: 2 / 1;
+            padding: 35px;
+            background-color: hsl(179, 62%, 43%);
+            color: white;
+            border-radius: 0 0 0 5px;
+        }
+        
+        .L_h2 {
+            padding-bottom: 20px;
+        }
+        
+        .dollar {
+            font-weight: 700;
+            font-size: 30px;
+        }
+        
+        .p-month {
+            color: hsla(204, 43%, 93%, 0.6);
+            padding-left: 10px;
+        }
+        
+        .prix {
+            display: flex;
+            height: 30px;
+            align-items: center;
+        }
+        
+        .L_p {
+            padding-top: 10px;
+            color: hsl(204, 43%, 93%)
+        }
+        
+        .button {
+            width: 50%;
+            height: auto;
+            padding: 15px;
+            margin-top: 25px;
+            margin-left: 20px;
+            background-color: hsl(71, 73%, 54%);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .button:hover {
+            background-color: hsl(71, 60%, 52%);
+        }
+        
+        .right {
+            grid-area: 2 / 2;
+            background-color: hsla(179, 62%, 43%, 0.8);
+            border-radius: 0 0 5px 0;
+            padding: 35px;
+            min-width: 100px;
+        }
+        
+        .R_h1 {
+            font-size: 17px;
+            color: white;
+            padding-bottom: 20px;
+        }
+        
+        .liste {
+            color: hsla(204, 43%, 93%, 0.7);
+            font-size: 12px;
+            line-height: 18px;
+        }
+        
+        @media all and (max-width: 375px) {
+            .all {
+                min-width: 80%;
+                max-height: auto;
+                margin-bottom: 100px;
+            }
+            .top {
+                grid-area: 1 / 1;
+                width: 75%;
+                height: 90%;
+            }
+            .left {
+                grid-area: 2 / 1;
+            }
+            .right {
+                grid-area: 3 / 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="top">
+            <h1 class="T_h1">Join our community</h1>
+            <h2 class="T_h2">30-day, hassle-free money back guarantee</h2>
+            <p class="T_p">
+                Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.
+            </p>
+        </div>
+
+        <div class="left">
+            <h2 class="L_h2">Monthly Subscription</h2>
+            <div class="prix">
+                <span class="dollar">&dollar;29</span> <span class="p_month">per month</span>
+            </div>
+            <p>Full access for less than &dollar;1 a day</p>
+            <div class="button">Sign Up</div>
+        </div>
+
+        <div class="right">
+            <h1 class="R_h1">Why Us</h1>
+            <ul class="liste">
+                <li>Tutorials by industry experts</li>
+                <li>Peer &amp; expert code review</li>
+                <li>Coding exercises</li>
+                <li>Access to our GitHub repos</li>
+                <li>Communiy forum</li>
+                <li>Flashcard decks</li>
+                <li> New videos every week</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.github.com/aymanebenhima" target="_blank">Aymane Benhima</a>. Coded by <a href="#">Coding Guild Team</a>.
+        </p>
+    </footer>
+</body>
+
+</html>

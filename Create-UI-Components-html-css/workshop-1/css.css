@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url("https://fonts.google.com/specimen/Kumbh+Sans") format("ttf"),
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+}
+
+.backgroundTop {
+    position: fixed;
+    top: -60%;
+    left: -22%;
+    max-width: 75%;
+}
+
+.backgroundBottom {
+    position: fixed;
+    bottom: -73%;
+    right: -16%;
+    max-width: 75%;
+}
+
+.contenu{
+    max-width: 500px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+.con{
+    position: relative
+}
+
+.backgroundcon {
+    width: 100%;
+    padding-bottom: 8rem;
+    background-image: url("images/bg-pattern-card.svg");
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.imageper {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profille {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profille1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5rem;
+    margin-bottom: -1.5rem;
+    justify-content: center;
+}
+
+.name {
+    font-family: "Kumbh Sans", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.age {
+    font-family: "Kumbh Sans", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(221, 221, 221);
+}
+
+.age::before{
+    content: "\00a0 ";
+}
+
+.city{
+    font-family: "Kumbh Sans", serif;
+	 margin-bottom: 1.5rem;
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(221, 221, 221);
+    
+} 
+
+hr {
+    width: 100%;
+    padding-top: 0.1rem;
+    background-color: rgb(235, 235, 235);
+    border-width: 0;
+}
+
+.fpl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fpl> div{
+    margin: 0 2.5rem 0 2.5rem;
+    text-align: center;
+}
+
+.numbers {
+    font-family: "Kumbh Sans", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.numbersTitle {
+    font-family: "Kumbh Sans", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(221, 221, 221);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 375px) {
+    .backgroundTopLeft {
+        top: -21%;
+        left: -57%;
+        max-width: 115%;
+    }
+
+    .backgroundBottom{
+        bottom: -12%;
+        right: -60%;
+        max-width: 122%;
+    }
+
+    .container {
+        width: 95%;
+        overflow: hidden;
+    } 
+
+    .fpl {
+        justify-content: center;
+    } 
+
+    .fpl> div{
+        margin: 0 1.5rem 0 1.5rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/ico" sizes="32x32" href="./images/favicon.ico">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+/>
+  <title>Huddle landing page with single introductory section Component</title>
+ 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @font-face {
+      font-family: "Open Sans";
+      src: url(https://fonts.google.com/specimen/Open+Sans);
+      Weights: 400
+    }
+
+    body {
+      background: url(images/bg-desktop.svg);
+      background-color: hsl(257, 40%, 49%);
+      width: 100%;
+    }
+.site{
+  margin-top: 1rem;
+margin-bottom: 1rem;
+margin-left: 1rem;
+margin-right: 1rem;}
+
+    .photos {
+      position: absolute;
+      top: 25%;
+      left: 26%;
+      transform: translate(-50%, 0%);
+    }
+
+    .name {
+      position: absolute;
+      top: 9%;
+      left: 12%;
+      transform: translate(-50%, 0%)
+    }
+
+    .titre {
+
+      max-width: 500px;
+      margin: 0 auto;
+      position: absolute;
+      left: 70%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .titel {
+
+      font-family: "Open Sans", serif;
+      font-size: 36px;
+
+      font-weight: 400;
+    color: rgb(221, 221, 221);
+    line-height: 50px;
+    }
+
+    .paraghraphe {
+      font-family: "Open Sans", serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: rgb(243, 236, 236);
+      line-height: 30PX;
+
+    }
+
+    .button {
+      width: 80px;
+      height: 55px;
+
+      font-size: 15px;
+      font-weight: 400;
+      border-radius: 30%;
+      color: rgb(10, 10, 10);
+      border-style: none;
+    }
+
+    .button:hover {
+      background-color: hsl(300, 69%, 71%);
+    }
+ .icone{ 
+margin: auto;
+
+
+  font-size: 30px;
+   color: white; 
+   margin-right: 10PX;
+ }
+ .icone:hover{ color:hsl(300, 69%, 71%) ;
+ border: 1px solide hsl(300, 69%, 71%) ;}
+
+ 
+.facebook{  
+  padding: 15px;
+  border: 1px solid white;
+ 
+   border-radius: 10%; 
+   width: 30px;
+   height: 30px; 
+   
+   position: absolute;
+   top:90%;
+   left:78%
+  
+  
+   }
+.instagram{ border: 1px solid white;
+  padding: 15px;
+border-radius: 10%;
+  width: 30px;
+   height: 30px;
+   position: absolute;
+   top:90%;
+   left:84%
+  }
+.twiter{  margin: auto;
+  border: 1px solid white;
+  padding: 15px;
+  width: 30px;
+   height: 30px;
+   border-radius: 10%;
+   position: absolute;
+   top:90%;
+   left:90%;
+    }    
+   
+ 
+
+    @media (max-width: 375px) {
+
+ body {
+   background: url(images/bg-mobile.svg);
+      background-color: hsl(257, 40%, 49%);
+      width: 100%;
+    background-size:contain;
+    
+    }
+   
+    .photos {
+      position: absolute;
+      top: 20%;
+      left: 26%;
+      transform: translate(-50%, 0%);
+    } 
+    .logo {
+      width: 50%;
+      height: 30px;
+      margin: auto;
+    margin-top: -20%;
+    margin-bottom: 20px;
+    margin-left:40%; }
+    
+    .titre { width: 95%;
+
+      position: absolute;
+      
+      left: 47%;
+
+     margin-top: 120px;
+    
+     color: aliceblue;
+     text-align: center;
+     }
+     .titel {
+
+font-family: "Open Sans", serif;
+font-weight: 600px;
+font-size: 25px;
+margin-left: 20px;
+
+}
+.paraghraphe {  margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;} 
+    
+     .titel { 
+font-family: "Open Sans", serif;
+font-weight: 600px;
+font-size: 25px;
+} 
+
+
+
+.button {
+      width: 200px;
+      height: 60px;
+      margin-top: 30px;
+      font-size: 18px;
+      margin-top: 20px;
+
+      border-radius: 30%;
+      color: rgb(10, 10, 10);
+      border-style: none;
+      
+    }
+
+.button:hover {
+  color: white;
+  background-color:hsl(300, 69%, 71%) ;  }
+
+    .photos {width: 90%;
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 30%;
+     margin-left:20%; }
+     .facebook{  
+  padding: 3px;
+  border: 1px solid white;
+ 
+   border-radius:     10%; 
+   width: 30px;
+   height: 30px; 
+   
+   position: absolute;
+   top:5%;
+   left:55%
+  
+  
+   }
+.instagram{ border: 1px solid white;
+  padding: 3px;
+border-radius: 10%;
+  width: 30px;
+   height: 30px;
+   position: absolute;
+   top:5%;
+   left:70%
+  }
+.twiter{  margin: auto;
+  border: 1px solid white;
+  padding: 3px;
+  width: 30px;
+   height: 30px;
+   border-radius: 10%;
+   position: absolute;
+   top:5%;
+   left:85%;
+    }   
+    icone{ 
+margin: auto;
+
+
+  font-size: px;
+   color: white; 
+   margin-right: 10PX;
+ }
+ .icone:hover{ color:hsl(300, 69%, 71%) ;
+ border: 1px solide hsl(300, 69%, 71%) ;} 
+
+
+      }
+  </style>
+</head>
+
+<body>
+  <div class="site">
+
+
+
+    <div calss="img2">
+      <img class="photos" src="images/illustration-mockups.svg" alt="illustration-mockups.svg">
+
+    </div>
+    <div class="contenu">
+      <div class="name"> <img class=logo src="images/logo.svg" alt="logo.svg ">
+
+      </div>
+      <div class="titre">
+        <h2 class="titel">Build The community <br> your fans will love</h2>
+
+
+        <h4 class="paraghraphe"> huddle re-imagines the way we build communites .you have avoice,but so does your audience.
+          creat cooections with your users as you engage in genuine discution</h4>
+        <button class="button">Register</button>
+
+ 
+
+      </div>
+
+
+
+       
+
+      </div>
+      
+      <div class="icone">
+        <div class=" facebook">  <i class="fab fa-facebook-square"></i></div>
+
+         <div class="instagram"><i class="fab fa-instagram"></i></div>
+        <div class="twiter"><i class="fab fa-twitter"></i> </div>
+      </div>
+     
+    </div>
+
+
+
+
+
+
+ 
+</body>
+
+</html>
